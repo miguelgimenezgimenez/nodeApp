@@ -1,0 +1,20 @@
+{
+  "name": "nodeserver",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/www",
+    "dev": "DEBUG=nodeserver:* nodemon ./bin/www",
+    "client": "npm start --prefix client",
+    "build": "npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^8.1.0",
+    "express": "~4.16.0",
+    "mongoose": "^5.2.9",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.19.2"
+  }
+}
