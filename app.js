@@ -4,10 +4,10 @@ const logger = require('morgan');
 const mongoose = require('mongoose')
 
 // const config = require('./config')
+require('dotenv').config()
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-// require('dotenv').config()
 
 // mongoose.connect(config.mongoURI, {
 //     useNewUrlParser: true
@@ -23,11 +23,9 @@ app.use(cookieParser());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-const hostname = process.env.HOST;
-const database = process.env.DATABASE;
-const port = process.env.PORT;
+const hostname = process.env.GOOGLE_CLIENT_SECRET;
+
 
 console.log(hostname);
-console.log(database);
-console.log(port);
+
 module.exports = app;
