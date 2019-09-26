@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/ualljuss', usersRouter);
 
 const hostname = process.env.GOOGLE_CLIENT_SECRET;
 
