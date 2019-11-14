@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 // const config = require('./config')
 require('dotenv').config();
 
-const router = require('./routes/index');
+const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
 // mongoose.connect(config.mongoURI, {
